@@ -1,6 +1,8 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    kotlin("kapt") version "1.9.0"
+    id ("dagger.hilt.android.plugin")
 }
 
 android {
@@ -55,6 +57,8 @@ dependencies {
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
     implementation(platform(libs.androidx.compose.bom))
+    implementation(libs.androidx.lifecycle.viewmodel.compose)
+    implementation(libs.androidx.navigation.compose)
     implementation(libs.androidx.ui)
     implementation(libs.androidx.ui.graphics)
     implementation(libs.androidx.ui.tooling.preview)
@@ -66,4 +70,36 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    //retrofit
+    implementation (libs.retrofit)
+    implementation(libs.converter.gson)
+    implementation(libs.okhttp)
+    implementation(libs.okhttp3.logging.interceptor)
+
+    //Timber
+    implementation(libs.timber)
+
+    //Coroutines
+    implementation(libs.kotlinx.coroutines.core)
+    implementation(libs.kotlinx.coroutines.android)
+
+    //Coroutines Lifecycle Scopes
+    implementation(libs.androidx.lifecycle.viewmodel.ktx)
+    implementation(libs.androidx.lifecycle.runtime.ktx)
+
+    //Coil
+    implementation(libs.coil)
+    implementation(libs.accompanist.coil)
+
+    //Dagger - Hilt
+    implementation(libs.hilt.android)
+    implementation(libs.androidx.hilt.navigation.compose)
+    implementation(libs.androidx.hilt.navigation.fragment)
+    kapt(libs.hilt.android.compiler)
+
+    implementation(libs.palette.v7)
+}
+kapt {
+    correctErrorTypes = true
 }
