@@ -189,3 +189,7 @@ w
 G.idea/sonarlint/issuestore/e/6/e6e44e0a4d43228933ba4694593c864528898b99,e\1\e15e27d70e2216b93588cecf7e133266e52de52f
 w
 G.idea/sonarlint/issuestore/e/e/eede86aca5faa05705bd5e57787ad3d65bd29836,f\d\fd935c2f8f392f81db756c54b888bef6159778d9
+y
+Iapp/src/main/java/com/example/pokedex/data/localDB/DTO/pokedexEntryDTO.kt,0\4\0420462784bedcba82e51ed3d88af385f4c0a159
+t
+Dapp/src/main/java/com/example/pokedex/data/localDB/DTO/pokemonDTO.kt,a\c\acedff11fc2f17a222268f2cf06937642d9fa210

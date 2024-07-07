@@ -98,6 +98,7 @@ dependencies {
     implementation(libs.androidx.hilt.navigation.fragment)
     kapt(libs.hilt.android.compiler)
 
+    //Palette
     implementation(libs.palette.v7)
 }
 kapt {

@@ -230,11 +230,9 @@ fun PokedexEntry(
                     )
                 }
                 if (state is AsyncImagePainter.State.Success) {
-                    LaunchedEffect(painter) {
-                        val drawable = state.result.drawable
-                        viewModel.calcDominantColor(drawable) { color ->
-                            dominantColor = color
-                        }
+                    val drawable = state.result.drawable
+                    viewModel.calcDominantColor(drawable) { color ->
+                        dominantColor = color
                     }
                 }
                 SubcomposeAsyncImageContent()
